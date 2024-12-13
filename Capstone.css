@@ -79,6 +79,10 @@ header{
     width:100%;
     max-width: 100%;
 
+
+    animation-name: image_popup;
+    animation-duration: 1.5s;
+    animation-timing-function:ease;
 }
 
 .sub_content {
@@ -91,7 +95,11 @@ header{
 .img_element img {
     width: 100%;
     border: 1px solid rgba(68, 10, 143, 1);
+    animation-name: image_bulge;
+    animation-duration: 4s;
+    animation-timing-function:ease-out;
 }
+
 
 .design_num, .illustration {
     text-align: left;
@@ -215,6 +223,40 @@ header{
 }
 
 
+/* animations  */
+
+/* .main_image_div{
+    animation-name: image_popup;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+} */
+@keyframes image_popup{
+    0%{
+        width:0%;
+        /* transform: scale(1); */
+    }
+    100%{
+        width:100%;
+        /* transform: scale(1); */
+    }
+}
+@keyframes image_bulge{
+    0%{
+        width:0%;
+    }
+    75%{
+        width:110%
+    }
+    100%{
+        width:100%;
+
+    }
+}
+
+
+
+
+/*  responsiveness  */
 
 
 /* @media (max-width: 1024px) {
@@ -262,6 +304,10 @@ header{
     }
 }  */
 
+
+
+
+/* Responsivenes with units */
 
 
 @media (max-width:1024px){
@@ -318,5 +364,7 @@ header{
         font-size: 14px;
     }
 }
+
+
 
 
