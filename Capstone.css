@@ -81,7 +81,7 @@ header{
 
 
     animation-name: image_popup;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-timing-function:ease-out;
 }
 
@@ -96,9 +96,20 @@ header{
     width: 100%;
     border: 1px solid rgba(68, 10, 143, 1);
     animation-name: image_bulge;
-    animation-duration: 6s;
+    animation-duration: 2s;
     animation-timing-function:ease-out;
+
+
+    /* fhbsjekhbhdes */
+    transition-property:width,border-radius ;
+    transition-duration: 0.65s;
+    transition-timing-function: ease-in-out;
 }
+.img_element img:hover{
+    width:105%;
+    border-radius: 20px;
+}
+
 
 
 .design_num, .illustration {
@@ -317,6 +328,10 @@ header{
 @media (max-width: 768px) {
     .sub_content {
         grid-template-columns: 1fr;
+    }
+    .nav-bar{
+        flex-direction: column;
+        display: none;
     }
     .main_content_text {
         font-size: 3rem;
